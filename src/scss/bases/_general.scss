@@ -246,6 +246,11 @@
   will-change: filter;
 }
 
+[data-animation="video-blur"] {
+  opacity: 0;
+  will-change: filter;
+}
+
 .item-bg {
   position: relative;
 
