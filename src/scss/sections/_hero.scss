@@ -77,14 +77,15 @@
 
     position: absolute;
     bottom: -14rem;
-    left: 0;
+    left: -2rem;
     z-index: -1;
 
     @include md {
       height: calc(100vw/(393/836));
-      top: calc(100vw/(393/21));
+      // top: calc(100vw/(393/21));
+      top: 0;
       bottom: unset;
-      left: calc(100vw/(393/115));
+      left: calc(100vw/(393/70));
       z-index: -1;
     }
 
