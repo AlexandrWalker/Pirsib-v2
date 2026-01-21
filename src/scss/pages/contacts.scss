@@ -1,0 +1,35 @@
+@use './../mixins' as *;
+
+.page__inner {
+
+  .find-us {
+    padding: 0 0 6rem;
+
+    @include md {
+      padding: 0;
+    }
+
+    &__inner {
+      position: relative;
+    }
+
+    &__map {
+      width: calc(100% + (var(--container-padding)*2));
+      margin-left: calc(var(--container-padding) * -1);
+      position: absolute;
+      top: -20.9rem;
+    }
+
+    .mask {
+
+      &.mask--1 {
+        background-image: url(./../../images/mask/new-mask-1-reverse.webp);
+        height: 189.7rem;
+
+        top: -48.5rem;
+        left: 0;
+        right: unset;
+      }
+    }
+  }
+}

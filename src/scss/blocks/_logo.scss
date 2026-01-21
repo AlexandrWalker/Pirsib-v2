@@ -1,0 +1,46 @@
+@use './../mixins' as *;
+
+.logo {
+  width: fit-content;
+  height: 7rem;
+  transition: all 0.5s ease;
+
+  @include md {
+    display: flex;
+    opacity: 1;
+    height: 5.5rem;
+  }
+
+  &:not(.page__inner .logo) {
+
+    @include md {
+      display: none;
+    }
+  }
+
+  img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .header & {
+
+    @include domd {
+      transform: scale(0);
+      opacity: 0;
+      width: 0;
+    }
+  }
+
+  .page__inner .header:not(.menu--open.page__inner .header) &,
+  // .page__inner .header:not(.menu--open .header.show) &,
+  .header.show:not(.menu--open .header.show) & {
+
+    @include domd {
+      transform: scale(1);
+      opacity: 1;
+      width: auto;
+    }
+  }
+}

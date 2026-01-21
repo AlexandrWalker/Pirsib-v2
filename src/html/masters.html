@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru" class="page__inner">
+@@include('blocks/head.html', {"title": "Pirsib"})
+
+<body>
+  <div class="wrapper">
+    <!-- Шапка -->
+    @@include('./blocks/header.html')
+    <!-- Секции страницы -->
+    <main class="main">
+
+      <section class="template template--cover">
+        <div class="container">
+          <div class="template__inner">
+
+            <div class="breadcrumbs">
+              <ul>
+                <li>
+                  <a href="/Pirsib">
+                    Главная
+                  </a>
+                </li>
+                <li>
+                  Мастера
+                </li>
+              </ul>
+            </div>
+
+            <div class="template__content">
+              <div class="border"></div>
+              <div class="general__head">
+                <div class="general__title" data-transform="titleFadeUp">
+                  <h1 data-gradient-text>Наши мастера</h1>
+                </div>
+                <div class="general__text">
+                  <h6>
+                    Наша история началась в 2006 году в маленьком кабинете, который был арендован в медицинском центре
+                    университета
+                  </h6>
+                </div>
+                <a class="btn" href="#masters">
+                  <i class="icon-chevron-min"></i>
+                </a>
+              </div>
+              <div class="template__cover">
+                <img src="./../images/temp/masters-cover-2.png" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div class="mask mask--1" data-animation="parallax-box"></div>
+        </div>
+      </section>
+
+      <section id="masters" class="masters">
+        <div class="container">
+          <div class="masters__inner">
+
+            <div class="general__head" id="mastersPiercing">
+              <div class="general__title">
+                <h4 data-gradient-text>
+                  Мастера пирсинга
+                </h4>
+              </div>
+            </div>
+
+            <div id="masters__items" class="masters__items" data-transform="fadeUp">
+              @@loop('./elements/masters-item.html', './data/masters-piercing-items.json')
+            </div>
+
+            <div class="general__head" id="mastersTatu">
+              <div class="general__title">
+                <h4 data-gradient-text>
+                  Мастера тату
+                </h4>
+              </div>
+            </div>
+
+            <div id="masters__items" class="masters__items" data-transform="fadeUp">
+              @@loop('./elements/masters-item.html', './data/masters-tatu-items.json')
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <!-- Подвал -->
+    @@include('blocks/footer.html')

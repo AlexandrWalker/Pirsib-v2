@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru" class="page__inner">
+@@include('blocks/head.html', {"title": "Pirsib"})
+
+<body>
+  <div class="wrapper">
+    <!-- Шапка -->
+    @@include('./blocks/header.html')
+    <!-- Секции страницы -->
+    <main class="main">
+
+      <section class="template">
+        <div class="container">
+          <div class="template__inner">
+            <div class="breadcrumbs">
+              <ul>
+                <li>
+                  <a href="/Pirsib">
+                    Главная
+                  </a>
+                </li>
+                <li>
+                  Cертификаты
+                </li>
+              </ul>
+            </div>
+            <div class="general__head">
+              <div class="general__title">
+                <h1 data-gradient-text>
+                  Cертификаты
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="certificates">
+        <div class="container">
+          <div class="certificates__inner">
+            <div class="certificates__items" data-transform="fadeUp">
+              @@loop('./elements/certificates-item.html', './data/certificates-page-items.json')
+            </div>
+          </div>
+          <div class="mask mask--1" data-animation="parallax-box"></div>
+        </div>
+      </section>
+
+    </main>
+    <!-- Подвал -->
+    @@include('blocks/footer.html')

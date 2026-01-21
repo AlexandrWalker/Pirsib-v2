@@ -1,0 +1,103 @@
+@use './../mixins' as *;
+
+.decorations {
+
+  .general__title {
+
+    h4 {
+
+      @include sm {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    @include md {
+      flex-direction: column;
+    }
+
+    @include sm {
+      gap: 0.8rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: calc(25% - (6rem/4));
+    border-radius: 5rem;
+    overflow: hidden;
+
+    position: relative;
+
+    @include md {
+      width: 100%;
+    }
+
+    .border {
+      --border-radius: 5rem;
+    }
+
+    &-head {
+      flex-shrink: 0;
+      aspect-ratio: 1/1;
+      border-radius: 5rem;
+      overflow: hidden;
+      position: relative;
+    }
+
+    &-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 3rem;
+      padding: 3rem;
+      height: 100%;
+
+      @include md {
+        gap: calc(100vw/(393/24));
+        padding: calc(100vw/(393/30)) calc(100vw/(393/20)) calc(100vw/(393/20)) calc(100vw/(393/20));
+      }
+
+      @include sm {
+        gap: 2.4rem;
+        padding: 3rem 2rem 2rem 2rem;
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      @include md {
+        gap: calc(100vw/(393/20));
+      }
+
+      @include sm {
+        gap: 2rem;
+      }
+
+      h6 {
+        font-family: var(--font-family);
+        line-height: 90%;
+      }
+
+      p {
+        opacity: 0.5;
+      }
+    }
+
+    &-btns {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+}

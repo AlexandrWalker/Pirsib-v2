@@ -1,0 +1,149 @@
+@use './../mixins' as *;
+
+h1 {
+  font-family: var(--second-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12rem;
+  line-height: 100%;
+
+  @include md {
+    font-size: calc(100vw/(393/30));
+  }
+
+  @include sm {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-family: var(--second-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12rem;
+  line-height: 100%;
+
+  @include md {
+    font-size: calc(100vw/(393/30));
+  }
+
+  @include sm {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-family: var(--second-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8rem;
+  line-height: 120%;
+
+  @include md {
+    font-size: calc(100vw/(393/30));
+  }
+
+  @include sm {
+    font-size: 3rem;
+  }
+}
+
+h4 {
+  font-family: var(--second-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 100%;
+
+  @include md {
+    font-size: calc(100vw/(393/24));
+  }
+
+  @include sm {
+    font-size: 2.4rem;
+  }
+}
+
+h5 {
+  font-family: var(--second-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 100%;
+
+  @include md {
+    font-size: calc(100vw/(393/16));
+  }
+
+  @include sm {
+    font-size: 1.6rem;
+  }
+}
+
+h6 {
+  font-family: var(--second-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 140%;
+
+  @include md {
+    font-size: calc(100vw/(393/14));
+  }
+
+  @include sm {
+    font-size: 1.4rem;
+  }
+}
+
+p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 120%;
+
+  @include md {
+    font-size: calc(100vw/(393/14));
+
+  }
+
+  @include sm {
+    font-size: 1.4rem;
+  }
+}
+
+[data-gradient-text] {
+  --color1: #AD32AE;
+  --color2: #3C49C2;
+
+  color: transparent;
+  background: linear-gradient(90deg, var(--color1), var(--color2), var(--color1));
+  background-size: 200% 100%;
+  /* увеличиваем фон для бесшовного движения */
+  background-repeat: repeat-x;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: default;
+  width: fit-content;
+  transition: --color1 0.5s, --color2 0.5s;
+
+  will-change: background-position;
+}
+
+/* Мобильные устройства — CSS-анимация */
+@media (max-width: 834px) {
+  [data-gradient-text] {
+    animation: idleFlow 3s linear infinite;
+  }
+
+  @keyframes idleFlow {
+    from {
+      background-position: 0% 50%;
+    }
+
+    to {
+      background-position: 200% 50%;
+    }
+  }
+}

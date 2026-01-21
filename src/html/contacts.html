@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru" class="page__inner">
+@@include('blocks/head.html', {"title": "Pirsib"})
+
+<body>
+  <div class="wrapper">
+    <!-- Шапка -->
+    @@include('./blocks/header.html')
+    <!-- Секции страницы -->
+    <main class="main">
+
+      <section class="template">
+        <div class="container">
+          <div class="template__inner">
+            <div class="breadcrumbs">
+              <ul>
+                <li>
+                  <a href="/Pirsib">
+                    Главная
+                  </a>
+                </li>
+                <li>
+                  Контакты
+                </li>
+              </ul>
+            </div>
+            <div class="general__head">
+              <div class="general__title">
+                <h1 data-gradient-text>
+                  Контакты
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="find-us">
+        <div class="container">
+          <div class="find-us__inner">
+            <div class="find-us__content" data-transform="fadeUp">
+              <span class="border"></span>
+              <div class="find-us__items">
+                <div class="find-us__item">
+                  <p>
+                    Телефон:
+                  </p>
+                  <a href="tel:+79139178500">
+                    +7-913-917-8500
+                  </a>
+                </div>
+                <div class="find-us__item">
+                  <p>
+                    Почта:
+                  </p>
+                  <a href="mailto:pochta_companii@mail.ru">
+                    pochta_companii@mail.ru
+                  </a>
+                </div>
+                <div class="find-us__item">
+                  <p>
+                    Адрес:
+                  </p>
+                  <h6>
+                    Новосибирск,<br> Орджоникидзе, 35/1
+                  </h6>
+                  <div class="find-us__item-btn">
+                    <a class="btn btn--inner" href="/">
+                      <span class="border"></span>
+                      Построить маршрут
+                      <div class="btn btn--inner-icon">
+                        <span class="border"></span>
+                        <i class="icon-2gis"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="find-us__item">
+                  <p>
+                    Мессенджеры
+                  </p>
+                  <div class="find-us__social">
+                    <a class="btn btn--icon btn--max" href="/">
+                      <span class="border"></span>
+                      <i class="icon-max"></i>
+                    </a>
+                    <a class="btn btn--icon btn--telegram" href="/">
+                      <span class="border"></span>
+                      <i class="icon-telegram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="find-us__map" data-animation="blur">
+              <img src="./../images/temp/map.webp" alt="">
+            </div>
+          </div>
+          <div class="mask mask--1" data-animation="parallax-box"></div>
+        </div>
+      </section>
+
+    </main>
+    <!-- Подвал -->
+    @@include('blocks/footer.html')

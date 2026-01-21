@@ -1,0 +1,71 @@
+@use './../mixins' as *;
+
+/* Стили для иконок */
+[class^="icon-"],
+[class*=" icon-"] {
+  font-size: var(--btn-height);
+  transition: all 0.5s linear;
+}
+
+.icon {
+
+  &-chevron {
+
+    .btn:hover & {
+      color: #FE9AFF;
+    }
+  }
+
+  &-location {
+
+    .btn:hover & {
+      color: var(--pink);
+    }
+  }
+
+  &-telegram {
+    color: #02AEFF;
+
+    .btn:hover & {
+      text-shadow: #02AEFF 0 0 1rem;
+    }
+  }
+
+  &-whatsapp {
+    color: #38EF7D;
+
+    .btn:hover & {
+      text-shadow: #38EF7D 0 0 1rem;
+    }
+  }
+
+  &-max {
+    color: #356BEF;
+
+    .btn:hover & {
+      text-shadow: #356BEF 0 0 1rem;
+    }
+  }
+
+  &-vk {
+    color: #4680C2;
+  }
+
+  &-play {
+    color: #EB001B;
+  }
+
+  &-2gis {
+    color: #29B24A;
+  }
+
+  &-wb {
+    color: #AD32AE;
+    font-size: 1.2rem;
+  }
+
+  &-ozon {
+    color: #02AEFF;
+    font-size: 1.2rem;
+  }
+}
