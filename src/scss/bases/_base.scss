@@ -34,11 +34,12 @@ body {
   cursor: default;
 
   // background: var(--page-bg);
-  background-color: #0C0F1B;
+  // background-color: #0C0F1B;
   // background-color: #0c0d1b;
   // background-color: #0c0f1c;
   // background-color: #0b0e1b;
   // background-color: #050b19;
+  background-color: #060C1F;
 
   @include md {
     font-size: calc(100vw/(393/14));
