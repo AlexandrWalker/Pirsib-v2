@@ -72,12 +72,14 @@
 
   &__cover {
     width: auto;
-    height: 115.4rem;
+    // height: 115.4rem;
+    height: 126.4rem;
     pointer-events: none;
 
     position: absolute;
     bottom: -15.5rem;
-    left: 0;
+    // left: 0;
+    left: -15rem;
     z-index: -1;
 
     @include md {
