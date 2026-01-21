@@ -19,7 +19,7 @@ body {
   line-height: 120%;
   color: var(--purple);
   cursor: default;
-  background-color: #050b19;
+  background-color: #0C0F1B;
 }
 
 .wrapper {
@@ -109,8 +109,8 @@ a {
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
-  font-weight: 300;
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -125,8 +125,8 @@ a {
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
-  font-weight: 500;
+  src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -165,14 +165,6 @@ a {
 @font-face {
   font-family: Outfit;
   font-display: swap;
-  src: url("../fonts/Outfit-Bold.woff2") format("woff2"), url("../fonts/Outfit-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Outfit;
-  font-display: swap;
   src: url("../fonts/Outfit-ExtraBold.woff2") format("woff2"), url("../fonts/Outfit-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
@@ -181,8 +173,8 @@ a {
 @font-face {
   font-family: Outfit;
   font-display: swap;
-  src: url("../fonts/Outfit-ExtraLight.woff2") format("woff2"), url("../fonts/Outfit-ExtraLight.woff") format("woff");
-  font-weight: 200;
+  src: url("../fonts/Outfit-Bold.woff2") format("woff2"), url("../fonts/Outfit-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -191,6 +183,14 @@ a {
   font-display: swap;
   src: url("../fonts/Outfit-Light.woff2") format("woff2"), url("../fonts/Outfit-Light.woff") format("woff");
   font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Outfit;
+  font-display: swap;
+  src: url("../fonts/Outfit-ExtraLight.woff2") format("woff2"), url("../fonts/Outfit-ExtraLight.woff") format("woff");
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -3745,8 +3745,8 @@ html.out .biography__left {
   height: 115.4rem;
   pointer-events: none;
   position: absolute;
-  bottom: -14rem;
-  left: -2rem;
+  bottom: -15.5rem;
+  left: 0;
   z-index: -1;
 }
 
@@ -5415,7 +5415,7 @@ html.out .biography__left {
 
   .hero__cover {
     height: 212.7226463104vw;
-    top: 0;
+    top: -22.9007633588vw;
     bottom: unset;
     left: 17.8117048346vw;
     z-index: -1;
@@ -6095,7 +6095,7 @@ html.out .biography__left {
   }
 
   .hero__cover {
-    top: 1rem;
+    top: -7rem;
     left: 7rem;
   }
 
