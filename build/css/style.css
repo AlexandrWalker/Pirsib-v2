@@ -13,13 +13,13 @@ html {
 
 body {
   min-width: 320px;
+  background-color: #090b1c;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 120%;
   color: var(--purple);
   cursor: default;
-  background-color: #060C1F;
 }
 
 .wrapper {
@@ -93,32 +93,8 @@ a {
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
   src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff");
   font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-ExtraLight.woff2") format("woff2"), url("../fonts/Montserrat-ExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
-  font-weight: 300;
   font-style: normal;
 }
 
@@ -133,8 +109,32 @@ a {
 @font-face {
   font-family: Montserrat;
   font-display: swap;
+  src: url("../fonts/Montserrat-ExtraLight.woff2") format("woff2"), url("../fonts/Montserrat-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
   src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -3745,7 +3745,7 @@ html.out .biography__left {
   height: 126.4rem;
   pointer-events: none;
   position: absolute;
-  bottom: -15.5rem;
+  bottom: -21.5rem;
   left: -15rem;
   z-index: -1;
 }
