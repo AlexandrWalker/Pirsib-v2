@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" class="page__inner">
+<html lang="ru" class="page__inner page__masters-inner">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
@@ -11,7 +11,10 @@
   <meta name="format-detection" content="address=no">
   <meta name="format-detection" content="email=no">
   <!-- favicon -->
-
+  <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
   <!-- title -->
   <title>Pirsib</title>
   <!-- icons -->
@@ -117,7 +120,7 @@
     <div class="menu__list">
       <ul>
         <li>
-          <a href="/Pirsib">
+          <a href="/Pirsib/about.html">
             О студии
           </a>
         </li>
@@ -155,26 +158,39 @@
     </div>
     <div class="menu__content">
       <div class="menu__item">
-        <p>
-          Телефон:
-        </p>
-        <a href="tel:+79139178500" data-gradient-text>
-          +7-913-917-8500
-        </a>
+        <div class="menu__item-title">
+          <p>
+            Телефон:
+          </p>
+        </div>
+        <div class="menu__item-wrap">
+          <a class="menu__item-link" href="tel:+79139178500" data-gradient-text>
+            +7-913-917-8500
+          </a>
+          <a class="menu__item-link" href="tel:+79139178500" data-gradient-text>
+            +7-913-917-8500
+          </a>
+        </div>
       </div>
       <div class="menu__item">
-        <p>
-          Телефон:
-        </p>
-        <h5 data-gradient-text>
-          Орджоникидзе, 35/1, <br> Новосибирск
-        </h5>
+        <div class="menu__item-title">
+          <p>
+            Телефон:
+          </p>
+        </div>
+        <div class="menu__item-wrap">
+          <div class="menu__item-text" data-gradient-text>
+            Орджоникидзе, 35/1, <br> Новосибирск
+          </div>
+        </div>
       </div>
       <div class="menu__item">
-        <p>
-          Наши группы в ВК:
-        </p>
-        <div class="menu__btns">
+        <div class="menu__item-title">
+          <p>
+            Наши группы в ВК:
+          </p>
+        </div>
+        <div class="menu__item-btns">
           <a class="btn btn--social" href="/">
             <span class="border"></span>
             Пирсинг
@@ -194,9 +210,11 @@
         </div>
       </div>
       <div class="menu__item">
-        <p>
-          Наш канал в Telegram
-        </p>
+        <div class="menu__item-title">
+          <p>
+            Наш канал в Telegram
+          </p>
+        </div>
         <div class="menu__btns">
           <a class="btn btn--social" href="/">
             <span class="border"></span>
@@ -257,11 +275,9 @@
                   <i class="icon-play"></i>
                 </div>
                 <div class="biography__block-head">
-                  <div class="biography__block-name">
-                    <h4>
-                      Софа
-                      Маркусь
-                    </h4>
+                  <div class="biography__block-name h4">
+                    Софа
+                    Маркусь
                   </div>
                   <div class="biography__block-post">
                     <p>
@@ -274,33 +290,28 @@
                     <p>
                       Опыт работы
                     </p>
-                    <h6>
+                    <div class="h6">
                       5 лет
-                    </h6>
+                    </div>
                   </div>
                   <div class="biography__block-wrap">
                     <p>
                       Стоимость услуги
                     </p>
-                    <h6>
+                    <div class="h6">
                       от 1500 руб.
-                    </h6>
+                    </div>
                   </div>
                 </div>
-                <!-- <div class="biography__block-img" data-animation="parallax-img-scale">
+                <div class="biography__block-img" data-animation="parallax-img-scale">
                   <img src="./images/temp/masters-inner-photo.png" alt="">
-                </div> -->
-                <video class="biography__block-video" autoplay muted playsinline data-animation="video-blur">
-                  <source src="./master_video/1.MP4" type="video/mp4">
-                </video>
+                </div>
               </div>
               <div class="biography__block biography__block--mob" data-transform="fadeUp">
                 <div class="biography__block-head">
-                  <div class="biography__block-name">
-                    <h4>
-                      Софа
-                      Маркусь
-                    </h4>
+                  <div class="biography__block-name h4">
+                    Софа
+                    Маркусь
                   </div>
                   <div class="biography__block-post">
                     <p>
@@ -309,9 +320,9 @@
                   </div>
                 </div>
                 <div class="biography__block-content">
-                  <h5>
+                  <div class="h5">
                     Обо мне
-                  </h5>
+                  </div>
                   <p>
                     Я настроилась уже на жуткую боль, как мастер Алина предложила поставить титановое украшение с
                     фианитом, потому что золотое украшение на очень короткой ножке и с зазагулиной и что ставить его
@@ -333,9 +344,9 @@
 
             <div class="biography__right" data-animation="blur">
               <div class="biography__content">
-                <h6>
+                <div class="h6">
                   О мастере
-                </h6>
+                </div>
                 <p>
                   Софа - мастер пирсинга в студии Piersib, которая превратила свой интерес к иглам в искусство. Она
                   словно родилась с медицинской энциклопедией в одной руке и иглой для пирсинга в другой. С ее
@@ -350,9 +361,9 @@
                 <div class="biography__content-img biography__content-img--row" data-animation="parallax-img">
                   <img src="./images/temp/masters-inner-cover-2.png" alt="">
                 </div>
-                <h6>
+                <div class="h6">
                   Начало пути: энциклопедии и первые уколы
-                </h6>
+                </div>
                 <p>
                   Родившись в 2003 году в алмазной столице России - городе Мирный, Софа уже в детстве проявляла
                   интерес к медицине. В третьем классе она настолько увлеклась биологией, что однажды засела за
@@ -363,9 +374,9 @@
                   избавиться от страха игл, что позже стало серьезным
                   преимуществом.
                 </p>
-                <h6>
+                <div class="h6">
                   Юрист в прошлом, пирсер в настоящем
-                </h6>
+                </div>
                 <p>
                   Несмотря на дерзкую подростковую натуру, Софа пошла по стопам мамы и получила юридическое
                   образование. Однако страсть к пирсингу никуда не исчезла. В пятом классе она увидела у
@@ -381,9 +392,9 @@
                 <div class="biography__content-img" data-animation="parallax-img">
                   <img src="./images/temp/masters-inner-cover-3.png" alt="">
                 </div>
-                <h6>
+                <div class="h6">
                   Как Софа попала в Piersib
-                </h6>
+                </div>
                 <p>
                   В Piersib Софа попала так: познакомилась с Женей, владельцем студии на конференции по пирсингу. «Я
                   попросила взять меня к себе, и он сказал ждать. Ну что ж, я дождалась!» - рассказывает
@@ -404,9 +415,9 @@
             <div class="works__head">
               <div class="general__head">
                 <div class="general__title" data-transform="titleFadeUp">
-                  <h3 data-gradient-text>
+                  <h4 data-gradient-text>
                     Работы мастера
-                  </h3>
+                  </h4>
                 </div>
               </div>
               <div class="works__btns">
@@ -430,24 +441,24 @@
                     <a class="works__item" href="/">
                       <span class="border"></span>
                       <div class="works__content">
-                        <h5>
+                        <div class="works__content-title h5">
                           Пирсинг в ухе
-                        </h5>
+                        </div>
                         <div class="works__content-wrap">
                           <p>
                             Стоимость украшения
                           </p>
-                          <h6>
+                          <div class="h6">
                             3 000 руб.
-                          </h6>
+                          </div>
                         </div>
                         <div class="works__content-wrap">
                           <p>
                             Стоимость работы
                           </p>
-                          <h6>
+                          <div class="h6">
                             12 000 руб.
-                          </h6>
+                          </div>
                         </div>
                       </div>
                       <div class="btn">
@@ -463,24 +474,24 @@
                     <a class="works__item" href="/">
                       <span class="border"></span>
                       <div class="works__content">
-                        <h5>
+                        <div class="works__content-title h5">
                           Пирсинг в носу
-                        </h5>
+                        </div>
                         <div class="works__content-wrap">
                           <p>
                             Количество затраченных часов:
                           </p>
-                          <h6>
+                          <div class="h6">
                             10 часов
-                          </h6>
+                          </div>
                         </div>
                         <div class="works__content-wrap">
                           <p>
                             Стоимость работы
                           </p>
-                          <h6>
+                          <div class="h6">
                             12 000 руб.
-                          </h6>
+                          </div>
                         </div>
                       </div>
                       <div class="btn">
@@ -496,24 +507,24 @@
                     <a class="works__item" href="/">
                       <span class="border"></span>
                       <div class="works__content">
-                        <h5>
+                        <div class="works__content-title h5">
                           Пирсинг в носу
-                        </h5>
+                        </div>
                         <div class="works__content-wrap">
                           <p>
                             Количество затраченных часов:
                           </p>
-                          <h6>
+                          <div class="h6">
                             10 часов
-                          </h6>
+                          </div>
                         </div>
                         <div class="works__content-wrap">
                           <p>
                             Стоимость работы
                           </p>
-                          <h6>
+                          <div class="h6">
                             12 000 руб.
-                          </h6>
+                          </div>
                         </div>
                       </div>
                       <div class="btn">
@@ -529,24 +540,24 @@
                     <a class="works__item" href="/">
                       <span class="border"></span>
                       <div class="works__content">
-                        <h5>
+                        <div class="works__content-title h5">
                           Пирсинг в ухе
-                        </h5>
+                        </div>
                         <div class="works__content-wrap">
                           <p>
                             Стоимость украшения
                           </p>
-                          <h6>
+                          <div class="h6">
                             3 000 руб.
-                          </h6>
+                          </div>
                         </div>
                         <div class="works__content-wrap">
                           <p>
                             Стоимость работы
                           </p>
-                          <h6>
+                          <div class="h6">
                             12 000 руб.
-                          </h6>
+                          </div>
                         </div>
                       </div>
                       <div class="btn">
@@ -562,24 +573,24 @@
                     <a class="works__item" href="/">
                       <span class="border"></span>
                       <div class="works__content">
-                        <h5>
+                        <div class="works__content-title h5">
                           Пирсинг в носу
-                        </h5>
+                        </div>
                         <div class="works__content-wrap">
                           <p>
                             Количество затраченных часов:
                           </p>
-                          <h6>
+                          <div class="h6">
                             10 часов
-                          </h6>
+                          </div>
                         </div>
                         <div class="works__content-wrap">
                           <p>
                             Стоимость работы
                           </p>
-                          <h6>
+                          <div class="h6">
                             12 000 руб.
-                          </h6>
+                          </div>
                         </div>
                       </div>
                       <div class="btn">
@@ -595,24 +606,24 @@
                     <a class="works__item" href="/">
                       <span class="border"></span>
                       <div class="works__content">
-                        <h5>
+                        <div class="works__content-title h5">
                           Пирсинг в носу
-                        </h5>
+                        </div>
                         <div class="works__content-wrap">
                           <p>
                             Количество затраченных часов:
                           </p>
-                          <h6>
+                          <div class="h6">
                             10 часов
-                          </h6>
+                          </div>
                         </div>
                         <div class="works__content-wrap">
                           <p>
                             Стоимость работы
                           </p>
-                          <h6>
+                          <div class="h6">
                             12 000 руб.
-                          </h6>
+                          </div>
                         </div>
                       </div>
                       <div class="btn">
@@ -727,6 +738,101 @@
         </div>
       </section>
 
+      <section class="certificates awards">
+        <div class="container">
+          <div class="certificates__inner">
+            <div class="general__head">
+              <div class="general__title" data-transform="titleFadeUp">
+                <h2 data-gradient-text>Награды и дипломы</h2>
+              </div>
+            </div>
+            <div class="certificates__items" data-animation="blur">
+              <a class="certificates__item awards__item" href="./images/temp/explanation-cover.png" data-fancybox>
+  <span class="border"></span>
+
+  <div class="certificates__item-title h6">
+    Название награды или диплома
+  </div>
+
+  <div class="certificates__item-icon">
+    <img src="./images/temp/awards.svg" alt="">
+  </div>
+
+  <div class="btn btn--inner">
+    <span class="border"></span>
+    <span data-text="Подробнее" data-text-mob="Название награды или диплома"></span>
+    <div class="btn btn--inner-icon">
+      <span class="border"></span>
+      <i class="icon-download"></i>
+    </div>
+  </div>
+
+</a><a class="certificates__item awards__item" href="./images/temp/explanation-cover.png" data-fancybox>
+  <span class="border"></span>
+
+  <div class="certificates__item-title h6">
+    Название награды или диплома
+  </div>
+
+  <div class="certificates__item-icon">
+    <img src="./images/temp/awards.svg" alt="">
+  </div>
+
+  <div class="btn btn--inner">
+    <span class="border"></span>
+    <span data-text="Подробнее" data-text-mob="Название награды или диплома"></span>
+    <div class="btn btn--inner-icon">
+      <span class="border"></span>
+      <i class="icon-download"></i>
+    </div>
+  </div>
+
+</a><a class="certificates__item awards__item" href="./images/temp/explanation-cover.png" data-fancybox>
+  <span class="border"></span>
+
+  <div class="certificates__item-title h6">
+    Название награды или диплома
+  </div>
+
+  <div class="certificates__item-icon">
+    <img src="./images/temp/awards.svg" alt="">
+  </div>
+
+  <div class="btn btn--inner">
+    <span class="border"></span>
+    <span data-text="Подробнее" data-text-mob="Название награды или диплома"></span>
+    <div class="btn btn--inner-icon">
+      <span class="border"></span>
+      <i class="icon-download"></i>
+    </div>
+  </div>
+
+</a><a class="certificates__item awards__item" href="./images/temp/explanation-cover.png" data-fancybox>
+  <span class="border"></span>
+
+  <div class="certificates__item-title h6">
+    Название награды или диплома
+  </div>
+
+  <div class="certificates__item-icon">
+    <img src="./images/temp/awards.svg" alt="">
+  </div>
+
+  <div class="btn btn--inner">
+    <span class="border"></span>
+    <span data-text="Подробнее" data-text-mob="Название награды или диплома"></span>
+    <div class="btn btn--inner-icon">
+      <span class="border"></span>
+      <i class="icon-download"></i>
+    </div>
+  </div>
+
+</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="opinion">
         <div class="container">
           <div class="opinion__inner">
@@ -734,7 +840,7 @@
             <div class="opinion__head">
               <div class="general__head">
                 <div class="general__title" data-transform="titleFadeUp">
-                  <h4 data-gradient-text>Отзывы о мастере</h4>
+                  <h2 data-gradient-text>Отзывы о мастере</h2>
                 </div>
               </div>
               <div class="opinion__btns">
@@ -755,17 +861,17 @@
               <div class="swiper opinion__slider">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-  <div class="opinion__item">
+  <a class="opinion__item item-bg" href="./images/temp/explanation-cover.png" data-fancybox>
     <span class="border"></span>
     <div class="opinion__item-head">
       <div class="opinion__item-photo">
-        <img src="./images/temp/opinion-photo-1.png" alt="">
+        <img src="./images/temp/opinion-avatar-female.svg" alt="">
         <i class="icon-2gis"></i>
       </div>
       <div class="opinion__item-wrap">
-        <h5>
+        <div class="opinion__item-name h5">
           Uluana
-        </h5>
+        </div>
         <p>
           13 мая 2020
         </p>
@@ -776,27 +882,27 @@
         Я настроилась уже на жуткую боль, как мастер Алина предложила поставить титановое украшение с фианитом, потому что золотое украшение на очень короткой ножке и с зазагулиной и что ставить его будет оооочень больно и ещё оно опять может вылететь. А титановое на прямой ножке и закручивается, то есть оно больше не вылетит! Эти аргументы были для меня решающими!
       </p>
     </div>
-    <a class="btn btn--inner" href="/">
+    <div class="btn btn--inner">
       <span class="border"></span>
       Весь отзыв
       <div class="btn btn--inner-icon">
         <span class="border"></span>
         <i class="icon-chevron"></i>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
 </div><div class="swiper-slide">
-  <div class="opinion__item">
+  <a class="opinion__item item-bg" href="./images/temp/blog-cover.png" data-fancybox>
     <span class="border"></span>
     <div class="opinion__item-head">
       <div class="opinion__item-photo">
-        <img src="./images/temp/opinion-photo-1.png" alt="">
+        <img src="./images/temp/opinion-avatar-male.svg" alt="">
         <i class="icon-2gis"></i>
       </div>
       <div class="opinion__item-wrap">
-        <h5>
+        <div class="opinion__item-name h5">
           Uluana
-        </h5>
+        </div>
         <p>
           13 мая 2020
         </p>
@@ -807,27 +913,27 @@
         Я настроилась уже на жуткую боль, как мастер Алина предложила поставить титановое украшение с фианитом, потому что золотое украшение на очень короткой ножке и с зазагулиной и что ставить его будет оооочень больно и ещё оно опять может вылететь. А титановое на прямой ножке и закручивается, то есть оно больше не вылетит! Эти аргументы были для меня решающими!
       </p>
     </div>
-    <a class="btn btn--inner" href="/">
+    <div class="btn btn--inner">
       <span class="border"></span>
       Весь отзыв
       <div class="btn btn--inner-icon">
         <span class="border"></span>
         <i class="icon-chevron"></i>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
 </div><div class="swiper-slide">
-  <div class="opinion__item">
+  <a class="opinion__item item-bg" href="./images/temp/catalog-piercing-cover.png" data-fancybox>
     <span class="border"></span>
     <div class="opinion__item-head">
       <div class="opinion__item-photo">
-        <img src="./images/temp/opinion-photo-1.png" alt="">
+        <img src="./images/temp/opinion-avatar-female.svg" alt="">
         <i class="icon-2gis"></i>
       </div>
       <div class="opinion__item-wrap">
-        <h5>
+        <div class="opinion__item-name h5">
           Uluana
-        </h5>
+        </div>
         <p>
           13 мая 2020
         </p>
@@ -838,27 +944,27 @@
         Я настроилась уже на жуткую боль, как мастер Алина предложила поставить титановое украшение с фианитом, потому что золотое украшение на очень короткой ножке и с зазагулиной и что ставить его будет оооочень больно и ещё оно опять может вылететь. А титановое на прямой ножке и закручивается, то есть оно больше не вылетит! Эти аргументы были для меня решающими!
       </p>
     </div>
-    <a class="btn btn--inner" href="/">
+    <div class="btn btn--inner">
       <span class="border"></span>
       Весь отзыв
       <div class="btn btn--inner-icon">
         <span class="border"></span>
         <i class="icon-chevron"></i>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
 </div><div class="swiper-slide">
-  <div class="opinion__item">
+  <a class="opinion__item item-bg" href="./images/temp/explanation-cover.png" data-fancybox>
     <span class="border"></span>
     <div class="opinion__item-head">
       <div class="opinion__item-photo">
-        <img src="./images/temp/opinion-photo-1.png" alt="">
+        <img src="./images/temp/opinion-avatar-male.svg" alt="">
         <i class="icon-2gis"></i>
       </div>
       <div class="opinion__item-wrap">
-        <h5>
+        <div class="opinion__item-name h5">
           Uluana
-        </h5>
+        </div>
         <p>
           13 мая 2020
         </p>
@@ -869,27 +975,27 @@
         Я настроилась уже на жуткую боль, как мастер Алина предложила поставить титановое украшение с фианитом, потому что золотое украшение на очень короткой ножке и с зазагулиной и что ставить его будет оооочень больно и ещё оно опять может вылететь. А титановое на прямой ножке и закручивается, то есть оно больше не вылетит! Эти аргументы были для меня решающими!
       </p>
     </div>
-    <a class="btn btn--inner" href="/">
+    <div class="btn btn--inner">
       <span class="border"></span>
       Весь отзыв
       <div class="btn btn--inner-icon">
         <span class="border"></span>
         <i class="icon-chevron"></i>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
 </div><div class="swiper-slide">
-  <div class="opinion__item">
+  <a class="opinion__item item-bg" href="./images/temp/explanation-cover.png" data-fancybox>
     <span class="border"></span>
     <div class="opinion__item-head">
       <div class="opinion__item-photo">
-        <img src="./images/temp/opinion-photo-1.png" alt="">
+        <img src="./images/temp/opinion-avatar-female.svg" alt="">
         <i class="icon-2gis"></i>
       </div>
       <div class="opinion__item-wrap">
-        <h5>
+        <div class="opinion__item-name h5">
           Uluana
-        </h5>
+        </div>
         <p>
           13 мая 2020
         </p>
@@ -900,27 +1006,27 @@
         Я настроилась уже на жуткую боль, как мастер Алина предложила поставить титановое украшение с фианитом, потому что золотое украшение на очень короткой ножке и с зазагулиной и что ставить его будет оооочень больно и ещё оно опять может вылететь. А титановое на прямой ножке и закручивается, то есть оно больше не вылетит! Эти аргументы были для меня решающими!
       </p>
     </div>
-    <a class="btn btn--inner" href="/">
+    <div class="btn btn--inner">
       <span class="border"></span>
       Весь отзыв
       <div class="btn btn--inner-icon">
         <span class="border"></span>
         <i class="icon-chevron"></i>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
 </div><div class="swiper-slide">
-  <div class="opinion__item">
+  <a class="opinion__item item-bg" href="./images/temp/explanation-cover.png" data-fancybox>
     <span class="border"></span>
     <div class="opinion__item-head">
       <div class="opinion__item-photo">
-        <img src="./images/temp/opinion-photo-1.png" alt="">
+        <img src="./images/temp/opinion-avatar-male.svg" alt="">
         <i class="icon-2gis"></i>
       </div>
       <div class="opinion__item-wrap">
-        <h5>
+        <div class="opinion__item-name h5">
           Uluana
-        </h5>
+        </div>
         <p>
           13 мая 2020
         </p>
@@ -931,27 +1037,27 @@
         Я настроилась уже на жуткую боль, как мастер Алина предложила поставить титановое украшение с фианитом, потому что золотое украшение на очень короткой ножке и с зазагулиной и что ставить его будет оооочень больно и ещё оно опять может вылететь. А титановое на прямой ножке и закручивается, то есть оно больше не вылетит! Эти аргументы были для меня решающими!
       </p>
     </div>
-    <a class="btn btn--inner" href="/">
+    <div class="btn btn--inner">
       <span class="border"></span>
       Весь отзыв
       <div class="btn btn--inner-icon">
         <span class="border"></span>
         <i class="icon-chevron"></i>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
 </div><div class="swiper-slide">
-  <div class="opinion__item">
+  <a class="opinion__item item-bg" href="./images/temp/explanation-cover.png" data-fancybox>
     <span class="border"></span>
     <div class="opinion__item-head">
       <div class="opinion__item-photo">
-        <img src="./images/temp/opinion-photo-1.png" alt="">
+        <img src="./images/temp/opinion-avatar-female.svg" alt="">
         <i class="icon-2gis"></i>
       </div>
       <div class="opinion__item-wrap">
-        <h5>
+        <div class="opinion__item-name h5">
           Uluana
-        </h5>
+        </div>
         <p>
           13 мая 2020
         </p>
@@ -962,27 +1068,27 @@
         Я настроилась уже на жуткую боль, как мастер Алина предложила поставить титановое украшение с фианитом, потому что золотое украшение на очень короткой ножке и с зазагулиной и что ставить его будет оооочень больно и ещё оно опять может вылететь. А титановое на прямой ножке и закручивается, то есть оно больше не вылетит! Эти аргументы были для меня решающими!
       </p>
     </div>
-    <a class="btn btn--inner" href="/">
+    <div class="btn btn--inner">
       <span class="border"></span>
       Весь отзыв
       <div class="btn btn--inner-icon">
         <span class="border"></span>
         <i class="icon-chevron"></i>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
 </div><div class="swiper-slide">
-  <div class="opinion__item">
+  <a class="opinion__item item-bg" href="./images/temp/explanation-cover.png" data-fancybox>
     <span class="border"></span>
     <div class="opinion__item-head">
       <div class="opinion__item-photo">
-        <img src="./images/temp/opinion-photo-1.png" alt="">
+        <img src="./images/temp/opinion-avatar-male.svg" alt="">
         <i class="icon-2gis"></i>
       </div>
       <div class="opinion__item-wrap">
-        <h5>
+        <div class="opinion__item-name h5">
           Uluana
-        </h5>
+        </div>
         <p>
           13 мая 2020
         </p>
@@ -993,27 +1099,27 @@
         Я настроилась уже на жуткую боль, как мастер Алина предложила поставить титановое украшение с фианитом, потому что золотое украшение на очень короткой ножке и с зазагулиной и что ставить его будет оооочень больно и ещё оно опять может вылететь. А титановое на прямой ножке и закручивается, то есть оно больше не вылетит! Эти аргументы были для меня решающими!
       </p>
     </div>
-    <a class="btn btn--inner" href="/">
+    <div class="btn btn--inner">
       <span class="border"></span>
       Весь отзыв
       <div class="btn btn--inner-icon">
         <span class="border"></span>
         <i class="icon-chevron"></i>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
 </div><div class="swiper-slide">
-  <div class="opinion__item">
+  <a class="opinion__item item-bg" href="./images/temp/explanation-cover.png" data-fancybox>
     <span class="border"></span>
     <div class="opinion__item-head">
       <div class="opinion__item-photo">
-        <img src="./images/temp/opinion-photo-1.png" alt="">
+        <img src="./images/temp/opinion-avatar-female.svg" alt="">
         <i class="icon-2gis"></i>
       </div>
       <div class="opinion__item-wrap">
-        <h5>
+        <div class="opinion__item-name h5">
           Uluana
-        </h5>
+        </div>
         <p>
           13 мая 2020
         </p>
@@ -1024,27 +1130,27 @@
         Я настроилась уже на жуткую боль, как мастер Алина предложила поставить титановое украшение с фианитом, потому что золотое украшение на очень короткой ножке и с зазагулиной и что ставить его будет оооочень больно и ещё оно опять может вылететь. А титановое на прямой ножке и закручивается, то есть оно больше не вылетит! Эти аргументы были для меня решающими!
       </p>
     </div>
-    <a class="btn btn--inner" href="/">
+    <div class="btn btn--inner">
       <span class="border"></span>
       Весь отзыв
       <div class="btn btn--inner-icon">
         <span class="border"></span>
         <i class="icon-chevron"></i>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
 </div><div class="swiper-slide">
-  <div class="opinion__item">
+  <a class="opinion__item item-bg" href="./images/temp/explanation-cover.png" data-fancybox>
     <span class="border"></span>
     <div class="opinion__item-head">
       <div class="opinion__item-photo">
-        <img src="./images/temp/opinion-photo-1.png" alt="">
+        <img src="./images/temp/opinion-avatar-male.svg" alt="">
         <i class="icon-2gis"></i>
       </div>
       <div class="opinion__item-wrap">
-        <h5>
+        <div class="opinion__item-name h5">
           Uluana
-        </h5>
+        </div>
         <p>
           13 мая 2020
         </p>
@@ -1055,27 +1161,27 @@
         Я настроилась уже на жуткую боль, как мастер Алина предложила поставить титановое украшение с фианитом, потому что золотое украшение на очень короткой ножке и с зазагулиной и что ставить его будет оооочень больно и ещё оно опять может вылететь. А титановое на прямой ножке и закручивается, то есть оно больше не вылетит! Эти аргументы были для меня решающими!
       </p>
     </div>
-    <a class="btn btn--inner" href="/">
+    <div class="btn btn--inner">
       <span class="border"></span>
       Весь отзыв
       <div class="btn btn--inner-icon">
         <span class="border"></span>
         <i class="icon-chevron"></i>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
 </div><div class="swiper-slide">
-  <div class="opinion__item">
+  <a class="opinion__item item-bg" href="./images/temp/explanation-cover.png" data-fancybox>
     <span class="border"></span>
     <div class="opinion__item-head">
       <div class="opinion__item-photo">
-        <img src="./images/temp/opinion-photo-1.png" alt="">
+        <img src="./images/temp/opinion-avatar-female.svg" alt="">
         <i class="icon-2gis"></i>
       </div>
       <div class="opinion__item-wrap">
-        <h5>
+        <div class="opinion__item-name h5">
           Uluana
-        </h5>
+        </div>
         <p>
           13 мая 2020
         </p>
@@ -1086,27 +1192,27 @@
         Я настроилась уже на жуткую боль, как мастер Алина предложила поставить титановое украшение с фианитом, потому что золотое украшение на очень короткой ножке и с зазагулиной и что ставить его будет оооочень больно и ещё оно опять может вылететь. А титановое на прямой ножке и закручивается, то есть оно больше не вылетит! Эти аргументы были для меня решающими!
       </p>
     </div>
-    <a class="btn btn--inner" href="/">
+    <div class="btn btn--inner">
       <span class="border"></span>
       Весь отзыв
       <div class="btn btn--inner-icon">
         <span class="border"></span>
         <i class="icon-chevron"></i>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
 </div><div class="swiper-slide">
-  <div class="opinion__item">
+  <a class="opinion__item item-bg" href="./images/temp/explanation-cover.png" data-fancybox>
     <span class="border"></span>
     <div class="opinion__item-head">
       <div class="opinion__item-photo">
-        <img src="./images/temp/opinion-photo-1.png" alt="">
+        <img src="./images/temp/opinion-avatar-male.svg" alt="">
         <i class="icon-2gis"></i>
       </div>
       <div class="opinion__item-wrap">
-        <h5>
+        <div class="opinion__item-name h5">
           Uluana
-        </h5>
+        </div>
         <p>
           13 мая 2020
         </p>
@@ -1117,15 +1223,15 @@
         Я настроилась уже на жуткую боль, как мастер Алина предложила поставить титановое украшение с фианитом, потому что золотое украшение на очень короткой ножке и с зазагулиной и что ставить его будет оооочень больно и ещё оно опять может вылететь. А титановое на прямой ножке и закручивается, то есть оно больше не вылетит! Эти аргументы были для меня решающими!
       </p>
     </div>
-    <a class="btn btn--inner" href="/">
+    <div class="btn btn--inner">
       <span class="border"></span>
       Весь отзыв
       <div class="btn btn--inner-icon">
         <span class="border"></span>
         <i class="icon-chevron"></i>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
 </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -1137,19 +1243,25 @@
       </section>
 
     </main>
-    <!-- Подвал -->
-    <footer id="footer" class="footer" data-transform="fadeUp">
-  <div class="container">
-    <div class="footer__inner">
 
+    <!-- Подвал -->
+<footer id="footer" class="footer" data-transform="fadeUp">
+  <div class="container">
+    <div class="footer__inner block-bg">
+      <div class="border"></div>
       <div class="footer__content" data-animation="blur">
         <div class="footer__contact">
-          <a href="tel:+79139178500" data-gradient-text>
-            +7-913-917-8500
-          </a>
-          <h6>
+          <div class="footer__contact-links">
+            <a class="footer__contact-link" href="tel:+73832998500" data-gradient-text>
+              +7 383 299 85 00
+            </a>
+            <a class="footer__contact-link" href="tel:+79139178500" data-gradient-text>
+              +7 913 917 85 00
+            </a>
+          </div>
+          <div class="footer__contact-address">
             Орджоникидзе, 35/1, Новосибирск
-          </h6>
+          </div>
         </div>
         <div class="footer__menu">
           <ul>
@@ -1159,7 +1271,7 @@
               </a>
             </li>
             <li>
-              <a href="/Pirsib">
+              <a href="/Pirsib/about.html">
                 О студии
               </a>
             </li>
@@ -1193,16 +1305,63 @@
                 Контакты
               </a>
             </li>
+            <li>
+              <a href="/Pirsib/about.html">
+                Лазерное удаление татуировок
+              </a>
+            </li>
+            <li>
+              <a href="/Pirsib/site-map.html">
+                Карта сайта
+              </a>
+            </li>
           </ul>
         </div>
-        <div class="footer__wrap">
-          <div class="footer__messengers">
-            <div class="footer__messengers-title">
-              <p>
-                Мессенджеры
-              </p>
+        <div class="footer__items">
+          <div class="footer__item footer__item--groups">
+            <div class="footer__item-title">
+              Наши группы в ВК:
             </div>
-            <div class="footer__messengers-btns">
+            <div class="footer__item-btns">
+              <a class="btn btn--social" href="/">
+                <span class="border"></span>
+                <div class="btn__text" data-text="Пирсинг" data-text-mob="Группа по пирсингу"></div>
+                <div class="btn btn--inner-icon">
+                  <span class="border"></span>
+                  <i class="icon-vk"></i>
+                </div>
+              </a>
+              <a class="btn btn--social" href="/">
+                <span class="border"></span>
+                <div class="btn__text" data-text="Татуировки" data-text-mob="Группа по Татуировкам"></div>
+                <div class="btn btn--inner-icon">
+                  <span class="border"></span>
+                  <i class="icon-vk"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="footer__item footer__item--channel">
+            <div class="footer__item-title">
+              Наш канал в Telegram
+            </div>
+            <div class="footer__item-btns">
+              <a class="btn btn--social" href="/">
+                <span class="border"></span>
+                <div class="btn__text" data-text="Подписаться" data-text-mob="Канал в Telegram">
+                </div>
+                <div class="btn btn--inner-icon">
+                  <span class="border"></span>
+                  <i class="icon-telegram"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__item-title">
+              Напишите нам
+            </div>
+            <div class="footer__item-social">
               <a class="btn btn--icon btn--max" href="/">
                 <span class="border"></span>
                 <i class="icon-max"></i>
@@ -1211,136 +1370,109 @@
                 <span class="border"></span>
                 <i class="icon-telegram"></i>
               </a>
-            </div>
-          </div>
-          <div class="footer__social">
-            <div class="footer__social-title">
-              <p>
-                Наш канал и группы в ВК:
-              </p>
-            </div>
-            <div class="footer__social-btns">
-              <a class="btn btn--social" href="/">
+              <!-- <a class="btn btn--icon btn--vk" href="/">
                 <span class="border"></span>
-                Пирсинг
-                <div class="btn btn--inner-icon">
-                  <span class="border"></span>
-                  <i class="icon-vk"></i>
-                </div>
-              </a>
-              <a class="btn btn--social" href="/">
-                <span class="border"></span>
-                Татуировки
-                <div class="btn btn--inner-icon">
-                  <span class="border"></span>
-                  <i class="icon-vk"></i>
-                </div>
-              </a>
-              <a class="btn btn--social" href="/">
-                <span class="border"></span>
-                Подписаться в Telegram
-                <div class="btn btn--inner-icon">
-                  <span class="border"></span>
-                  <i class="icon-telegram"></i>
-                </div>
-              </a>
+                <i class="icon-vk"></i>
+              </a> -->
             </div>
           </div>
         </div>
+        <div class="footer__links">
+          <a href="/Pirsib/privacy.html">
+            Политика конфиденциальности
+          </a>
+          <a href="/Pirsib/policy.html">
+            Политика в отношении обработки персональных данных
+          </a>
+          <a href="/Pirsib/agreement.html">
+            Пользовательское соглашение
+          </a>
+        </div>
         <div class="footer__foot">
-          <div class="footer__foot-wrap">
-            <div class="footer__copyright">
-              © ООО «Пирсиб»
-            </div>
-            <div class="footer__made">
-              Разработка сайта — <a href="https://1and2.ru/">Once&Twice</a>
-            </div>
+          <div class="footer__copyright">
+            © ООО «Пирсиб»
           </div>
-          <div class="footer__links">
-            <div class="footer__links-title">
-              <p>
-                Информация
-              </p>
-            </div>
-            <a href="/Pirsib">
-              Политика конфиденциальности
-            </a>
-            <a href="/Pirsib">
-              Политика конфиденциальности
-            </a>
-            <a href="/Pirsib">
-              Пользовательское соглашение
-            </a>
+          <div class="footer__made">
+            Разработка и продвижение — <a href="https://1and2.ru/">Once&Twice</a>
           </div>
         </div>
       </div>
-
-      <div class="footer__form" data-animation="blur">
-        <form class="form" action="">
+      <div class="footer__form block-bg" data-animation="blur">
+        <div class="border"></div>
+        <div class="form">
           <div class="form__head">
             <div class="form__title">
-              <h5>
-                Закажите консультацию по телефону
-              </h5>
+              Закажите консультацию по телефону
             </div>
             <div class="form__text">
               Наша история началась в 2006 году в маленьком кабинете, который был арендован в медицинском центре
               университета
             </div>
           </div>
-          <div class="form__body">
-            <div class="col-xs-12">
-              <div class="form-group">
-                <input class="form-input" name="foot_name" type="text" placeholder="Ваше имя*">
-                <i class="icon-user"></i>
-                <span class="border"></span>
-              </div>
+          <form action="" class="form__body">
+            <div class="form-group">
+              <input class="form-input" name="foot_name" type="text" placeholder="Ваше имя*">
+              <i class="icon-user"></i>
+              <span class="border"></span>
             </div>
-            <div class="col-xs-12">
-              <div class="form-group">
-                <input class="form-input" name="foot_tel" type="tel" placeholder="Телефон*">
-                <i class="icon-phone"></i>
-                <span class="border"></span>
-              </div>
+            <div class="form-group">
+              <input class="form-input" name="foot_tel" type="tel" placeholder="Телефон*">
+              <i class="icon-phone"></i>
+              <span class="border"></span>
             </div>
-            <div class="col-xs-12">
-              <div class="form-group">
-                <input class="form-input" name="foot_email" type="email" placeholder="Эл. почта">
-                <i class="icon-mail"></i>
-                <span class="border"></span>
-              </div>
+            <div class="form-group">
+              <input class="form-input" name="foot_email" type="email" placeholder="Эл. почта">
+              <i class="icon-mail"></i>
+              <span class="border"></span>
             </div>
-            <div class="col-xs-12">
-              <div class="form-foot">
-                <button class="btn form-btn">
+            <div class="form-foot">
+              <button class="btn form-btn">
+                <span class="border"></span>
+                Отправить заявку
+                <div class="btn btn--inner-icon">
                   <span class="border"></span>
-                  Отправить заявку
-                  <div class="btn btn--inner-icon">
-                    <span class="border"></span>
-                    <i class="icon-chevron"></i>
-                  </div>
-                </button>
-                <div class="form-group">
-                  <div class="form-wrap">
-                    <input id="foot_checkbox" class="form-checkbox" type="checkbox">
-                    <label for="foot_checkbox" class="form-checkbox--item"></label>
+                  <i class="icon-chevron"></i>
+                </div>
+              </button>
+              <div class="form-group">
+                <div class="form-wrap">
+                  <input id="foot_policy_checkbox" class="form-checkbox" name="foot_form_policy_agree" type="checkbox">
+                  <label for="foot_policy_checkbox" class="form-checkbox--item">
+                    <div class="form-checkbox--icon"></div>
                     <p>
-                      Нажимая кнопку, вы даёте согласие на обработку ваших персональных данных
+                      Я согласен на <a href="/Pirsib/policy.html">обработку персональных данных</a>
                     </p>
-                  </div>
+                  </label>
                 </div>
               </div>
+              <div class="form-group">
+                <div class="form-wrap">
+                  <input id="foot_ad_checkbox" class="form-checkbox" name="foot_form_ad_agree" type="checkbox">
+                  <label for="foot_ad_checkbox" class="form-checkbox--item">
+                    <div class="form-checkbox--icon"></div>
+                    <p>
+                      Я согласен на рекламные уведомления
+                    </p>
+                  </label>
+                </div>
+              </div>
+              <div class="form-wrap">
+                <p>
+                  Нажимая на кнопку «Отправить» вы соглашаетесь с <a href="/Pirsib/policy.html">Политикой обработки
+                    персональных данных</a>
+                </p>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
-
     </div>
   </div>
 </footer>
 <!-- Плашки -->
 <div class="plate">
-  <div class="plate__inner">
+  <div class="plate__inner block-bg">
+    <div class="border"></div>
     <div class="plate__social">
       <a class="btn btn--icon btn--max" href="/">
         <span class="border"></span>
@@ -1361,15 +1493,31 @@
     </div>
   </div>
 </div>
-<!-- Попап -->
+
+<div id="plate-cookie" class="cookie">
+  <div class="cookie__inner block-bg">
+    <div class="border"></div>
+    <div class="cookie__text">
+      <p>
+        Мы обрабатываем <a href="/Pirsib/cookie.html">cookies</a> с целью персонализации сервисов, и чтобы Вам было
+        удобнее пользоваться веб-сайтом.
+      </p>
+    </div>
+    <button class="btn" onclick="checkCookies()">
+      <span class="border"></span>
+      Хорошо
+    </button>
+  </div>
+</div>
+<!-- Попапы -->
 <div class="popup" id="popup-1">
 
   <form class="form" action="">
     <div class="form__head">
       <div class="form__title">
-        <h5>
+        <div class="h5">
           Закажите консультацию по телефону
-        </h5>
+        </div>
       </div>
       <div class="form__text">
         Наша история началась в 2006 году в маленьком кабинете, который был арендован в медицинском центре
@@ -1392,12 +1540,33 @@
             <i class="icon-chevron"></i>
           </div>
         </button>
-        <div class="form-group">
+        <div class="hero__request-foot">
+          <div class="form-group">
+            <div class="form-wrap">
+              <input id="policy_checkbox" class="form-checkbox" name="form_policy_agree" type="checkbox">
+              <label for="policy_checkbox" class="form-checkbox--item">
+                <div class="form-checkbox--icon"></div>
+                <p>
+                  Я согласен на <a href="/Pirsib/policy.html">обработку персональных данных</a>
+                </p>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-wrap">
+              <input id="ad_checkbox" class="form-checkbox" name="form_ad_agree" type="checkbox">
+              <label for="ad_checkbox" class="form-checkbox--item">
+                <div class="form-checkbox--icon"></div>
+                <p>
+                  Я согласен на рекламные уведомления
+                </p>
+              </label>
+            </div>
+          </div>
           <div class="form-wrap">
-            <input id="foot_checkbox" class="form-checkbox" type="checkbox">
-            <label for="foot_checkbox" class="form-checkbox--item"></label>
             <p>
-              Нажимая кнопку, вы даёте согласие на обработку ваших персональных данных
+              Нажимая на кнопку «Отправить» вы соглашаетесь с <a href="/Pirsib/policy.html">Политикой обработки
+                персональных данных</a>
             </p>
           </div>
         </div>
@@ -1409,9 +1578,9 @@
 
 <div class="popup" id="popup-2">
 
-  <h5>
+  <div class="h5">
     Ваша заявка отправлена!
-  </h5>
+  </div>
 
 </div>
 </div>

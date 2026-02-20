@@ -1,0 +1,146 @@
+@use './../mixins' as *;
+
+.sample {
+
+  .general__head {
+    margin-bottom: 0;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    max-width: 125.2rem;
+
+    @include md {
+      gap: calc(100vw/(393/20));
+    }
+
+    @include sm {
+      gap: 2rem;
+    }
+  }
+
+  &__content {
+
+    * {
+      margin-bottom: 2rem;
+
+      @include md {
+        margin-bottom: calc(100vw/(393/15));
+      }
+
+      @include sm {
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @include md {
+      gap: calc(100vw/(393/5));
+    }
+
+    @include sm {
+      gap: 0.5rem;
+    }
+  }
+
+  &__tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    padding: 1rem 2.2rem;
+    border-radius: 10rem;
+    background-color: var(--border-dark-blue-50);
+    transition: all 0.5s ease;
+
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 120%;
+    text-align: center;
+    color: var(--purple);
+
+    @include md {
+      height: calc(100vw/(393/30));
+      padding: calc(100vw/(393/5)) calc(100vw/(393/22));
+
+      font-size: calc(100vw/(393/10));
+    }
+
+    @include sm {
+      height: 3rem;
+      padding: 0.5rem 2.2rem;
+
+      font-size: 1rem;
+    }
+
+    &:hover {
+      color: var(--pink-2);
+      background-color: var(--border-dark-blue);
+    }
+  }
+
+  ul {}
+
+  li {
+    padding-left: 2.4rem;
+    margin-bottom: 2rem;
+    position: relative;
+
+    @include md {
+      margin-bottom: calc(100vw/(393/15));
+    }
+
+    @include sm {
+      margin-bottom: 1.5rem;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      width: 0.25rem;
+      height: 0.25rem;
+      border-radius: 50%;
+      background-color: var(--purple);
+
+      position: absolute;
+      top: 0.75rem;
+      left: 1.05rem;
+    }
+  }
+
+  img {
+    width: 49.7rem;
+    height: 32.5rem;
+    object-fit: cover;
+    border-radius: 5rem;
+    float: left;
+    margin: 1rem 4rem 1rem 0;
+
+    @include md {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      margin: 0;
+      margin-bottom: calc(100vw/(393/15));
+      border-radius: 2.4rem;
+    }
+
+    @include sm {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
